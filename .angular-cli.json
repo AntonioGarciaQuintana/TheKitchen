@@ -21,10 +21,18 @@
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/font-awesome/css/font-awesome.css" ,
-        "styles.css"
+        "./assets/plugins/node-waves/waves.css",
+        "../node_modules/animate.css/animate.css",
+        "./assets/plugins/material-design-preloader/md-preloader.css",
+        "styles.css",
+        "./assets/css/all-themes.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.min.js"
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "./assets/plugins/node-waves/waves.js",
+        "./assets/plugins/jquery-slimscroll/jquery.slimscroll.js",
+        "./assets/js/admin.js"
           ],
       "environmentSource": "environments/environment.ts",
       "environments": {
