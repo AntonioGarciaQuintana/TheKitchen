@@ -1,2 +1,135 @@
-<header-root></header-root>
+<!-- Page Loader -->
+<!--
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="md-preloader pl-size-md">
+            <svg viewbox="0 0 75 75">
+             <circle cx="37.5" cy="37.5" r="33.5" class="pl-red" stroke-width="4" />
+            </svg>
+        </div>
+        <p>Espere un momento...</p>
+    </div>
+</div>-->
+<!-- #END# Page Loader -->
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars -->
+<!-- Top Bar -->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+            <a href="javascript:void(0);" class="bars"></a>
+            <a class="navbar-brand" href="../../index.html">THE KITCHEN</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <img src="../Style/Imagenes/img.jpg" alt="">John Doe
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-usermenu pull-right">
+                        <li>
+                            <a href="login.html">
+                                <i class="glyphicon glyphicon-log-in"></i> Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- #Top Bar -->
+<section>
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar">
+        <!-- User Info -->
+        <div class="user-info">
+            <div class="image">
+                <img src="../assets/images/user.png" width="48" height="48" alt="User" />
+            </div>
+            <div class="info-container">
+                <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nombre de usuario</div>
+                <div class="email">Administrador del sistema</div>
+                <div class="btn-group user-helper-dropdown">
+                    <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <i class="material-icons">input</i>Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- #User Info -->
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="list">
+                <li class="header">Menú</li>
+                <li>
+                    <a href="../../index.html">
+                        <i class="material-icons">home</i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="menu-toggle">
+                        <i class="material-icons">assignment</i>
+                        <span>Catálogos</span>
+                    </a>
+                    <ul class="ml-menu">
+                        <li>
+                            <a routerLink="restaurantManagement">Restaurantes</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- #Menu -->
+        <!-- Footer -->
+        <div class="legal">
+            <div class="copyright">
+                &copy; 2018
+                <a href="javascript:void(0);">Fco. Antonio García Quintana</a>.
+            </div>
+            <div class="version">
+                <b>Version: </b> 0.0.1
+            </div>
+        </div>
+        <!-- #Footer -->
+    </aside>
+    <!-- #END# Left Sidebar -->
 
+</section>
+
+<section class="content">
+    <router-outlet></router-outlet>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="#">Menu 1</a>
+  <a href="#">Menu 2</a>
+  <a href="#">Menu 3</a>
+  <a href="#">Menu 4</a>
+</div>
+
+<div id="main">
+  <h2>Contenido de la aplicacion</h2>
+  <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776; open</span>
+</div>-->
