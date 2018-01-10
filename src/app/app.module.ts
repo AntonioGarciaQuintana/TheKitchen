@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { RestaurantManagementComponent } from './catalogos/restaurantes/restaurantManagement.component';
 import { HomeComponent } from './home/home.component';
+import { ApiService } from './common/service/ApiService';
+import { HttpModule } from '@angular/http';
+
 
 
 const appRoutes: Routes = [
@@ -24,9 +27,10 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
